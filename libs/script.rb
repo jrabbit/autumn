@@ -3,6 +3,7 @@
 
 require 'fileutils'
 require 'getoptlong'
+require 'rubygems'
 require 'facets'
 require 'libs/generator'
 

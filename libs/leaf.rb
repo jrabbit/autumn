@@ -659,7 +659,8 @@ module Autumn
     end
     
     def leaf_name
-      Foliater.instance.leaves.key self
+      leaves = Foliater.instance.leaves.invert
+      return leaves[self]    
     end
 
     def run_before_filters(cmd, stem, channel, sender, command, msg)
